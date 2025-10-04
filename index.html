@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個人介紹</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Serif TC", Georgia, serif;
+      line-height: 1.8;
+      color: #2c3e50;
+      background: linear-gradient(180deg, #fdfcf9 0%, #f7f3ef 100%);
+    }
+
+    /* 文藝導覽列 (方案1) */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #fdfcf9;
+      padding: 14px 0;
+      text-align: center;
+      border-bottom: 2px solid #1F477D; /* 紫色下劃線 */
+      font-family: "Georgia", serif;
+      letter-spacing: 1px;
+      z-index: 100;
+    }
+    nav a {
+      margin: 0 40px;
+      text-decoration: none;
+      color: #1F477D;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+    nav a:hover {
+      color: #2d66b0;
+      text-shadow: 0 0 6px rgba(142,68,173,0.3);
+    }
+
+    /* 主要區塊 */
+    section {
+      max-width: 700px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    section img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      /* border: 3px solid #8e44ad; */
+      display: block;
+      margin: 0 auto 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 22px;
+      margin-top: 40px;
+      margin-bottom: 15px;
+      border-left: 4px solid #1F477D;
+      padding-left: 10px;
+    }
+    p, ul {
+      font-size: 16px;
+      margin: 0 0 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li::before {
+      content: "• ";
+      color: #1F477D;
+    }
+
+    /* 底部 */
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+      color: #555;
+    }
+    .social a {
+      margin: 0 8px;
+      text-decoration: none;
+      color: #1F477D;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">作品集</a>
+  </nav>
+
+  <!-- 首頁內容 -->
+  <section id="home">
+    <img src="photo.jpg" alt="大頭貼">
+    <h1>翁晟恩</h1>
+    <p style="text-align:center;">生活中的小小碎片，都是浪花</p>
+  </section>
+
+  <section>
+    <h2>自我介紹</h2>
+    <p>
+      一個喜歡仰望天空，心卻常常沉於文字裡的大學牲。<br>
+      總在大笑與沉思之間遊走，用狂放包裹著社恐。<br>
+      這裡記錄著我的人生、故事與矛盾——<br>
+      既想遠行，也想好好待在原地。<br>
+      若你願意停下來看看，或許我們能在字裡行間遇見彼此。<br>
+      在隨筆雜談中，追尋更多人文溫度。
+    </p>
+  </section>
+
+  <section>
+    <h2>學經歷</h2>
+    <ul>
+      <li>🎓 國立臺南女子高級中學</li>
+      <li>🎓 國立中山大學 中文系</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>興趣</h2>
+    <p>🎤 唱歌 ｜ 📚 閱讀 ｜ 🎥 影劇  ｜ ✍️ 寫作</p>
+  </section>
+
+  <footer>
+    <div class="social">
+      <a href="https://www.instagram.com/chengenweng/">IG</a> | <a href="https://www.facebook.com/weng.cheng.en.438627/?locale=zh_TW">FB</a>
+    </div>
+    <p>© 2025 翁晟恩</p>
+  </footer>
+
+</body>
+</html>

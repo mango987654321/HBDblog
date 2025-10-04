@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作品集</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Serif TC", Georgia, serif;
+      color: #2c3e50;
+      line-height: 1.8;
+      background: linear-gradient(180deg, #fdfcf9 0%, #f7f3ef 100%);
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #fdfcf9;
+      padding: 14px 20px;
+      border-bottom: 2px solid #1F477D;
+      font-family: "Georgia", serif;
+      letter-spacing: 1px;
+      z-index: 100;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 40px;
+      text-decoration: none;
+      color: #1F477D;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+    nav a:hover {
+      color: #2d66b0;
+      text-shadow: 0 0 6px rgba(142,68,173,0.3);
+    }
+
+    /* Banner / 封面圖 */
+    .banner {
+      width: 100%;
+      height: 200px;
+      background-image: url("sea.jpg"); /* 可換成你的圖 */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    .banner::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.3);
+    }
+    .banner h1 {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      margin: 0;
+      color: #fff;
+      font-size: 32px;
+      z-index: 2;
+    }
+
+    section {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    /* 作品摘要區 */
+    .work {
+      padding: 25px 20px;
+      margin-bottom: 0;
+    }
+    /* 交錯背景色塊 */
+    /* .work:nth-child(odd) {
+      background-color: #ffffff;
+    }
+    .work:nth-child(even) {
+      background-color: #f7f3ef;
+    } */
+    /* 標題與文字 */
+    .work h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      color: #1F477D;
+    }
+    .work p {
+      margin: 0 0 15px;
+      font-size: 16px;
+      color: #444;
+    }
+    .work a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #2d66b0;
+      transition: color 0.3s;
+    }
+    .work a:hover {
+      color: #1F477D;
+    }
+
+    /* 每個作品底部水平線 */
+    .work + .work {
+      border-top: 2px solid #1F477D;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">作品集</a>
+  </nav>
+
+  <div class="banner">
+    <h1>生日雜記</h1>
+  </div>
+
+  <section>
+    <div class="work">
+      <h2>For 16</h2>
+      <p>不得不說今年的生日很特別，不同於以往的琳瑯滿目的實體禮物，取而代之的是有溫度的一句「生日快樂」...</p>
+
+      <a href="work.html">閱讀更多 →</a>
+    </div>
+
+    <div class="work">
+      <h2>For 17</h2>
+      <p>祝新的階段啟程新的開始<br>
+我更加成熟也有嘗試的膽識...
+</p>
+      <a href="work2.html">閱讀更多 →</a>
+    </div>
+
+    <div class="work">
+      <h2>For 18</h2>
+      <p>以前的我在求庇佑時，總貪心的說：「想許的願望太多，就許心想事成讓一切實現」...</p>
+      <a href="work3.html">閱讀更多 →</a>
+    </div>
+
+    <div class="work">
+      <h2>For 19</h2>
+      <p>19歲了，這年過得很是匆忙。</p>
+      <p>我還沒把中山附近的食物吃遍，還沒抓準校車的發車規律，甚至還會在依山傍海的學校中迷路，然而轉眼間，一學期便毫不留情的過去...</p>
+
+      <a href="work4.html">閱讀更多 →</a>
+    </div>
+
+    <div class="work">
+      <h2>For 20</h2>
+      <p>邁向二字頭，沒錯我20歲了！</p>
+      <p>去年初去日本神社跨年時，門前佈告列有該年大凶與對照性別年齡，很遺憾...</p>
+
+      <a href="work5.html">閱讀更多 →</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 翁晟恩</p>
+  </footer>
+
+</body>
+</html>
